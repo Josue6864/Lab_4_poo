@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.lab_4_poo.modelo;
 
-/**
- *
- * @author david_oavv7c4
- */
-public class Resultado {
-    
+import java.util.Map;
+
+/** Contrato para resultados completos y validados por una disciplina. */
+public interface Resultado {
+
+    /** Devuelve aportes por código de participante en un mapa no modificable. */
+    Map<String, AporteResultado> getAportes();
+
+    /** Describe las marcas, penales, tiempos o descalificaciones registrados. */
+    String getResumen();
 }
